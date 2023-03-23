@@ -1,0 +1,37 @@
+<router-outlet></router-outlet><br>
+<h3 class="title">HAI NADHIYA AKKA</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3 coulmpan">
+      <app-left></app-left>
+    </div>
+    <div class="col-sm-6 coulmpan">
+      <app-middle></app-middle>
+    </div>
+    <div class="col-sm-3 coulmpan">
+      <app-right></app-right>
+    </div>
+  </div>
+</div>
+<hr>
+
+<!-- binding methods -->
+<app-binding></app-binding>
+<!-- dirctives -->
+<app-direct></app-direct>
+<!-- routing -->
+<app-routing></app-routing>
+<hr>
+<!-- @input decorators -->
+<div>
+ <app-input [subjectChild]="subject"
+  (numberGenerated1)="onNumberGenerated($event)">
+  </app-input>
+  <p>
+    Random number from child component:
+    {{randomNumber || 'Not yet generated'}}
+  </p>
+</div>
+<hr>
+<!-- observable works  -->
+<app-observable></app-observable>

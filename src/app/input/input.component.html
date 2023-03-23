@@ -1,0 +1,13 @@
+<p>@input decorators works!</p>
+<div>
+  <p *ngFor="let sub of subjectChild">
+  {{sub.id}}.
+  {{sub.name}}
+ </p>
+</div>
+<hr>
+<div>
+  <p>@output decorators</p>
+  <button class="btn btn-warning" (click)="generatenumber()">First Event!</button>
+</div>
+<br>

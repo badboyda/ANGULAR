@@ -1,0 +1,25 @@
+<!-- <app-aboutme></app-aboutme>
+<app-contactme></app-contactme>
+<app-home></app-home> inthamari pannama routing set pannido inga panniralam singleway-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+
+      <a class="nav-item nav-link active" routerLink="/home" routerLinkActive="Active"
+      [routerLinkActiveOptions]="{exact:true}">Home</a><br>
+      <!-- skipLocationChange="true" -->
+      <a class="nav-item nav-link" routerLink="/contactme" routerLinkActive="Active"
+      [routerLinkActiveOptions]="{exact:true}">Contact</a><br>
+      <a class="nav-item nav-link" routerLink="/aboutme" routerLinkActive="Active"
+     >Aboutme</a><br>
+    </div>
+  </div>
+</nav>
+
+<br>
+
+<router-outlet></router-outlet>

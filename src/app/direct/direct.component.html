@@ -1,0 +1,27 @@
+<hr>
+<p>direct works!</p>
+<div *ngIf="books;then bookavailable;else display">
+  books available !.
+</div>
+<ng-template #bookavailable>
+  <div *ngFor="let obj of books;index as i;even as e; odd as o; first as f;last as l;">
+    <div>
+      <div [ngSwitch]="obj.bookstatus">
+        <!-- *ngSwitchCase="'Available'" bottom varum ipo ang ngstyle use-->
+        <div [ngClass]="{'avail': obj.bookstatus=='Available','notavl':obj.bookstatus =='NotAvailable'}">
+          {{i}} - {{obj.bookname | shorten:4}}
+        </div>
+        <!-- <div *ngSwitchDefault="obj.bookstatus"> -->
+           <!-- default books- {{obj.bookname}} -->
+        </div>
+      </div>
+
+      <!-- .... next even-> {{e}}....next odd->{{o}}...next first record->{{f}}.... last record->{{l}}. -->
+    </div>
+  <!-- </div> -->
+</ng-template>
+
+<ng-template #display>
+  not avilable
+</ng-template>
+<hr>

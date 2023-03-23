@@ -1,0 +1,16 @@
+h3{
+  color:rebeccapurple;
+  font-weight: bold;
+}
+.title{
+  text-align: center;
+  vertical-align: bottom;
+  background-color: lightblue;
+  height: 40px;
+  padding-top: 5px;
+}
+.coulmpan{
+  height: 80vh;
+  border-color: lightgreen;
+  border-style: solid;
+}
